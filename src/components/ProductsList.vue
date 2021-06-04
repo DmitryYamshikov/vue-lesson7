@@ -17,3 +17,20 @@
     </div>
   </div>
 </template>
+
+<script>
+  import {mapGetters, mapAcions} from 'vuex';
+
+
+export default {
+  data: ()=>({
+    
+  }),
+  computed: {
+    ...mapGetters('products', {products:'items'}), 
+  },
+  methods: {
+    ...mapAcions('')
+  }
+}
+</script>
